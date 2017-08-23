@@ -11,7 +11,7 @@ import "unsafe"
 
 // Init --
 // call this function before calling all the other operations
-// this function is not thread safe
+// This function is thread-safe.
 func Init(curve int) error {
 	err := C.blsInit(C.int(curve), C.MCLBN_FP_UNIT_SIZE)
 	if err != 0 {
