@@ -123,6 +123,8 @@ func TestMclMain(t *testing.T) {
 	t.Logf("GetMaxOpUnitSize() = %d\n", GetMaxOpUnitSize())
 	t.Log("CurveFp254BNb")
 	testMcl(t, CurveFp254BNb)
+	t.Log("CurveSNARK1")
+	testMcl(t, CurveSNARK1)
 	if GetMaxOpUnitSize() == 6 {
 		t.Log("CurveFp382_1")
 		testMcl(t, CurveFp382_1)
